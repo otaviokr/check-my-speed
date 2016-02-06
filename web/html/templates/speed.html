@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+		// https://www.chromestatus.com/features/5724912467574784
+                var nominalBand = {{.NominalBand}};
+                var minValue = {{.MinValue}};
+                var maxValue = {{.MaxValue}};
+                var AvgValue = {{.AvgValue}};
+		var LastValue = {{.LastValue}};
+                var points = {{.Points}};
+        </script>
+        <script type="text/javascript" src="/resources/charts.js"></script>
+</head>
+<body onload="load()">
+        <div id="chart_div"></div>
+        <div id="line_div"></div>
+</body>
+
